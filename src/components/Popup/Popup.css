@@ -1,0 +1,24 @@
+.popup-div {
+    display: inline-block;
+    border: 1px solid red;
+
+}
+
+.b-popup{
+    width:30%;
+    margin: 30px auto 30px auto;
+    height: 350px;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:150px;
+    height: 250px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}

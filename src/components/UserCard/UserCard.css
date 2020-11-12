@@ -1,0 +1,34 @@
+.Card {
+    border: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+
+}
+
+p {
+    font-size: 10px;
+    line-height: 0.5em;
+}
+
+.Card.isSelected {
+    background-color: aliceblue;
+}
+
+.Card_title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Card_image {
+    height: 100px;
+    width: 100px;
+}
