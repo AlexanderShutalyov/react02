@@ -2,7 +2,6 @@ import React from 'react';
 import './Popup.css';
 
 const Popup = ({name, username, email, phone, addElement, handleInputChange }) => {
-
     return (
        <div className="popup-div" >
             <div className="b-popup">

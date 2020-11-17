@@ -52,14 +52,16 @@ class UserCardsWrapper extends React.Component {
         });
     }
 
+    reverseShowPopup = () => this.setState({showPopup: !this.showPopup});
+
     render() {
         const { userData } = this.state;
         const { showPopup } = this.state;
         return(
             <React.Fragment>
                 <div>
-                <button onClick={ ()=> this.setState({showPopup: !showPopup}) }>Add new user</button>
-                    { showPopup === true ? <Popup {...this.state} addElement={this.addElement} handleInputChange={this.handleInputChange}/> : ''}
+                <button onClick={ this.reverseShowPopup }>Add new user</button>
+                    { showPopup && <Popup {...this.state} addElement={this.addElement} handleInputChange={this.handleInputChange}/>}
                 </div>
                 { userData.map((props, index) => (
                     <UserCard {...props} key={index} removeElement={this.removeElement} currentIndex={index} />
@@ -70,3 +72,8 @@ class UserCardsWrapper extends React.Component {
 }
 
 export default UserCardsWrapper;
+
+// { showPopup && <Popup {...this.state} addElement={this.addElement} handleInputChange={this.handleInputChange}/>}
+
+
+
